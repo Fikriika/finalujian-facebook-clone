@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/activity_header" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/facebolf"
+        android:text="Choose Interests :"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnsport"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:background="#5C6BC0"
+        android:fontFamily="@font/facebolf"
+        android:text="Sport"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnmovie"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="#5C6BC0"
+        android:fontFamily="@font/facebolf"
+        android:text="Movie"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnsport"
+        app:layout_constraintStart_toStartOf="@+id/btnsport"
+        app:layout_constraintTop_toBottomOf="@+id/btnsport" />
+
+    <Button
+        android:id="@+id/btngames"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="#5C6BC0"
+        android:fontFamily="@font/facebolf"
+        android:text="Games"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnmovie"
+        app:layout_constraintStart_toStartOf="@+id/btnmovie"
+        app:layout_constraintTop_toBottomOf="@+id/btnmovie" />
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:background="#5C6BC0"
+        android:fontFamily="@font/facebolf"
+        android:text="Simpan"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/btngames"
+        app:layout_constraintStart_toStartOf="@+id/btngames"
+        app:layout_constraintTop_toBottomOf="@+id/btngames" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

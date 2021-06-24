@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/activity_header" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/facebolf"
+        android:text="Facebook"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/MyFriend"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/box" />
+
+    <ImageView
+        android:id="@+id/Posts"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyFriend"
+        app:srcCompat="@drawable/box" />
+
+    <ImageView
+        android:id="@+id/Profile"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Posts"
+        app:srcCompat="@drawable/box" />
+
+    <TextView
+        android:id="@+id/txtmyfriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/facebolf"
+        android:text="My Friend"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/MyFriend"
+        app:layout_constraintEnd_toEndOf="@+id/MyFriend"
+        app:layout_constraintStart_toStartOf="@+id/MyFriend"
+        app:layout_constraintTop_toTopOf="@+id/MyFriend" />
+
+    <TextView
+        android:id="@+id/txtpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/facebolf"
+        android:text="Posts"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Posts"
+        app:layout_constraintEnd_toEndOf="@+id/Posts"
+        app:layout_constraintStart_toStartOf="@+id/Posts"
+        app:layout_constraintTop_toTopOf="@+id/Posts" />
+
+    <TextView
+        android:id="@+id/txtprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/facebolf"
+        android:text="Profile"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Profile"
+        app:layout_constraintEnd_toEndOf="@+id/Profile"
+        app:layout_constraintStart_toStartOf="@+id/Profile"
+        app:layout_constraintTop_toTopOf="@+id/Profile" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
